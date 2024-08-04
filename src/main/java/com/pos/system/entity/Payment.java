@@ -37,4 +37,7 @@ public class Payment {
 
     @Column(name = "transferred_excess", precision = 2)
     private BigDecimal TransferredExcess; //0
+
+    @OneToOne(mappedBy = "payment")
+    private Payment payment;
 }
