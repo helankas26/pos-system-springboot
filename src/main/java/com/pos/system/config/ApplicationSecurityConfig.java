@@ -40,6 +40,7 @@ public class ApplicationSecurityConfig extends WebSecurityConfiguration {
         this.jwtConfig = jwtConfig;
     }
 
+    @Bean
     public SecurityFilterChain securityFilterChain(
             HttpSecurity http, AuthenticationManager authenticationManager
     ) throws Exception {
